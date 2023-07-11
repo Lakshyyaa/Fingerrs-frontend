@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TypeWriter from "./TypeWriter";
-import styles from './formcss.css'
+import styles from '../styles/formcss.css'
 
 function UserName() {
   const ENDPOINT = 'http://localhost:5000'

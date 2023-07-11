@@ -1,7 +1,7 @@
 import React from "react";
-import styles from './footerstyles.css'
-import githubLogo from './github-logo.png'
-import twt from './twitter-logo.png'
+import styles from '../styles/footerstyles.css'
+import githubLogo from '../images/github-logo.png'
+import twt from '../images/twitter-logo.png'
 function Footer() {
     return (
         <div className="footerdiv">

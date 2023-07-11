@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import styles from './styles.css'
+import styles from '../styles/styles.css'
 import Multiplayer from "./Multiplayer";
 function SocketFront(props) {
     const [startby1, setStartby1] = useState(false)
