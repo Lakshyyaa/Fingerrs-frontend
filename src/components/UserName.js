@@ -85,7 +85,7 @@ function UserName() {
   }
   return (
     <div className="usernamediv">
-      <h1 className="h1">WELCOME TO FINGERSS!</h1>
+      <h1 className="h1">WELCOME TO Fasterr!</h1>
       <form className="form">
         <label id="formelement">
           <div className="inputname">

@@ -1,5 +1,3 @@
-// WHY GET WORKED AND NOT POST
-// WHY MAP WORKED NOT FOREACH IN UPDATEPROGRESS
 // WHY GLOBAL VAR NAME, ROOM NOT CHANGING ON INSIDE CHANGING BY FETCH
 import React, { useEffect, useState } from "react";
 import io from 'socket.io-client';
@@ -86,6 +84,7 @@ function Multiplayer(props) {
                 }
             }
         })
+        console.log("added called with", name, room)
         socket.emit('add', { name, room })
         socket.on('update', () => {
             update()
@@ -99,9 +98,9 @@ function Multiplayer(props) {
         let newprogress = (((props.index / props.words.length) * 100))
         if (!isNaN(newprogress)) {
             newprogress = newprogress.toFixed(2)
+            updateMembers(name, newprogress)
         }
         socket.emit('progress', { name: name, progress: newprogress })
-        updateMembers(newprogress)
     }, [props.words, props.index])
 
     useEffect(() => {
